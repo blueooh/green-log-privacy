@@ -1,0 +1,1 @@
+# golf-log-privacy
