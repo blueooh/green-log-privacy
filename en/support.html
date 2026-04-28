@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Green Log - Support</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+            max-width: 720px;
+            margin: 0 auto;
+            padding: 24px;
+            line-height: 1.7;
+            color: #1d1d1f;
+            background: #f5f5f7;
+        }
+        h1 {
+            color: #1d7a3a;
+            font-size: 28px;
+            margin-bottom: 8px;
+        }
+        h2 {
+            color: #1d7a3a;
+            font-size: 20px;
+            margin-top: 32px;
+            padding-bottom: 8px;
+            border-bottom: 1px solid #d2d2d7;
+        }
+        .card {
+            background: white;
+            border-radius: 12px;
+            padding: 24px;
+            margin: 16px 0;
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
+        }
+        a {
+            color: #1d7a3a;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        .faq-q {
+            font-weight: 600;
+            margin-top: 16px;
+        }
+        .faq-a {
+            color: #424245;
+            margin-top: 4px;
+        }
+        .contact {
+            background: #e8f4ec;
+            border-radius: 12px;
+            padding: 20px;
+            margin-top: 24px;
+        }
+        ul {
+            padding-left: 20px;
+        }
+        li {
+            margin: 6px 0;
+        }
+        .lang-switch {
+            text-align: right;
+            font-size: 14px;
+            margin-bottom: 8px;
+        }
+        .lang-switch a {
+            color: #1d7a3a;
+        }
+    </style>
+</head>
+<body>
+    <div class="lang-switch"><a href="../support.html">한국어</a> · <strong>English</strong></div>
+    <h1>Green Log Support</h1>
+    <p>Thank you for using Green Log, the golf score tracking app.</p>
+
+    <div class="card">
+        <h2>Key Features</h2>
+        <ul>
+            <li>Track 18-hole golf scores with automatic score-to-par calculation</li>
+            <li>Apple Watch integration — count scores directly from your watch</li>
+            <li>HealthKit integration — automatically record heart rate and step count during a round</li>
+            <li>Per-hole health data and statistics charts</li>
+            <li>All data stored on-device — no personal data is sent to external servers</li>
+        </ul>
+    </div>
+
+    <div class="card">
+        <h2>Frequently Asked Questions</h2>
+
+        <div class="faq-q">Q. Heart rate and step count are not being recorded.</div>
+        <div class="faq-a">
+            A. HealthKit data is collected only when a round is started on the Apple Watch.
+            Rounds entered solely on the iPhone will not have health data attached.
+            Also, please ensure that Green Log has HealthKit permission via
+            iPhone Settings → Health → Data Access &amp; Devices.
+        </div>
+
+        <div class="faq-q">Q. My data is not syncing between iPhone and Apple Watch.</div>
+        <div class="faq-a">
+            A. Make sure both devices are paired with the same Apple ID and Bluetooth is enabled.
+            Also confirm that Green Log is installed on your watch via the Watch app on iPhone.
+        </div>
+
+        <div class="faq-q">Q. How does the free version work? When do ads appear?</div>
+        <div class="faq-a">
+            A. To start a new round in the free version, you can either watch a rewarded
+            video ad or purchase "Remove Ads" for unlimited rounds without ads.
+            Once "Remove Ads" is purchased, no further ads will be shown and no
+            ad-related data will be transmitted.
+        </div>
+
+        <div class="faq-q">Q. I'd like to edit a previously saved round.</div>
+        <div class="faq-a">
+            A. You can edit a round from its detail screen. Note that rounds marked as
+            "Finished" cannot be modified.
+        </div>
+
+        <div class="faq-q">Q. Can I back up my data?</div>
+        <div class="faq-a">
+            A. Green Log stores all data locally on the device and does not support cloud
+            sync. Please be aware that uninstalling the app will permanently remove all
+            of your data.
+        </div>
+
+        <div class="faq-q">Q. How do I restore my "Remove Ads" purchase on a new device?</div>
+        <div class="faq-a">
+            A. Open the in-app purchase screen and tap "Restore Purchases". You must be
+            signed in with the same Apple ID used for the original purchase.
+        </div>
+    </div>
+
+    <div class="card">
+        <h2>Related Documents</h2>
+        <ul>
+            <li><a href="index.html">Privacy Policy</a></li>
+        </ul>
+    </div>
+
+    <div class="contact">
+        <h2 style="margin-top: 0; border: none; padding: 0;">Contact Us</h2>
+        <p>If you encounter any issues or have feature suggestions, please reach out to us:</p>
+        <p>Email: <a href="mailto:blueooh@gmail.com">blueooh@gmail.com</a></p>
+        <p>Bug Reports / Feature Requests: <a href="https://github.com/blueooh/green-log-privacy/issues">GitHub Issues</a></p>
+    </div>
+</body>
+</html>
