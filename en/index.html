@@ -95,14 +95,14 @@
         <li><strong>Heart Rate</strong>: Measured in real time during a round via the Apple Watch sensor.</li>
         <li><strong>Step Count</strong>: Counted from the start to the end of a round.</li>
     </ul>
-    <p>This data is <strong>stored only on the user's devices</strong> and is never transmitted to external servers or third parties. Health data is attached to the round record so users can review their own activity.</p>
+    <p>This data is stored on the device, and <strong>for signed-in users, it is also transmitted to and stored on our server for cloud sync</strong>. Health data is attached to the round record so users can review their own activity, and is never shared with third parties.</p>
     <p>HealthKit access requires the user's explicit permission, which can be revoked at any time via iPhone Settings → Health → Data Access &amp; Devices.</p>
 
     <h2>3. Data Storage</h2>
     <ul>
         <li>Round records and health data are stored locally on the device (UserDefaults).</li>
         <li>Data syncing between iPhone and Apple Watch is performed directly between devices via Apple's WatchConnectivity framework.</li>
-        <li>For signed-in users, round records are also stored on our server for cloud sync. Health data (heart rate, steps) is never transmitted to the server.</li>
+        <li>For signed-in users, round records and health data (heart rate, steps) are also stored on our server for cloud sync.</li>
         <li>Account information (email, display name) is securely stored in the device's Keychain along with authentication tokens.</li>
     </ul>
 
