@@ -64,11 +64,25 @@
 <body>
     <div class="lang-switch"><strong>한국어</strong> · <a href="en/">English</a></div>
     <h1>그린로그(Green Log) 개인정보 처리방침</h1>
-    <p class="date">시행일: 2026년 4월 27일</p>
+    <p class="date">시행일: 2026년 5월 5일</p>
 
     <h2>1. 수집하는 개인정보</h2>
-    <p>그린로그는 사용자가 직접 입력하는 <strong>골프 스코어, 라운드 정보 및 건강 데이터를 외부 서버로 수집하지 않습니다.</strong> 해당 데이터는 사용자의 기기(iPhone, Apple Watch)에만 저장됩니다.</p>
-    <p>다만, 앱 내 광고 표시 및 광고 효과 측정을 위해 아래 정보가 광고 SDK(Google AdMob) 및 Apple SKAdNetwork에 전달될 수 있습니다:</p>
+    <h3>1-1. 계정 정보</h3>
+    <p>그린로그는 클라우드 동기화 및 팀 라운딩 기능을 위해 <strong>Google 로그인</strong>을 지원합니다. 로그인 시 다음 정보가 수집되어 앱 서버에 저장됩니다:</p>
+    <ul>
+        <li><strong>이메일 주소</strong>: 계정 식별 및 로그인 용도</li>
+        <li><strong>표시 이름</strong>: 팀 라운딩에서 다른 참가자에게 표시</li>
+    </ul>
+    <p>로그인은 선택 사항이며, 로그인하지 않아도 앱의 기본 기능(스코어 기록, 통계 등)을 사용할 수 있습니다.</p>
+
+    <h3>1-2. 라운드 데이터 동기화</h3>
+    <p>로그인한 사용자의 골프 스코어 및 라운드 정보는 <strong>클라우드 동기화를 위해 앱 서버에 전송·저장</strong>됩니다. 이를 통해 다른 기기에서도 동일한 기록을 확인할 수 있습니다. 로그인하지 않은 경우 모든 데이터는 기기에만 저장됩니다.</p>
+
+    <h3>1-3. 팀 라운딩</h3>
+    <p>팀 라운딩 기능 이용 시, 참가자의 <strong>표시 이름, 홀별 스코어, 진행 상황</strong>이 같은 방의 다른 참가자에게 실시간으로 공유됩니다.</p>
+
+    <h3>1-4. 광고 관련 정보</h3>
+    <p>앱 내 광고 표시 및 광고 효과 측정을 위해 아래 정보가 광고 SDK(Google AdMob) 및 Apple SKAdNetwork에 전달될 수 있습니다:</p>
     <ul>
         <li><strong>광고 식별자(IDFA)</strong>: iOS의 앱 추적 투명성(ATT)에 따라 사용자가 명시적으로 허용한 경우에만 전달되며, 거부 시 IDFA는 전달되지 않습니다.</li>
         <li><strong>대략적 기기/OS 정보, 광고 노출·클릭 이벤트</strong>: 광고 게재, 사기 방지, 효과 측정 목적으로 사용됩니다.</li>
@@ -86,17 +100,20 @@
 
     <h2>3. 데이터 저장</h2>
     <ul>
-        <li>모든 라운드 기록 및 건강 데이터는 기기 내부(UserDefaults)에 저장됩니다.</li>
+        <li>라운드 기록 및 건강 데이터는 기기 내부(UserDefaults)에 저장됩니다.</li>
         <li>iPhone과 Apple Watch 간 데이터 동기화는 Apple의 WatchConnectivity 프레임워크를 통해 기기 간 직접 전송됩니다.</li>
-        <li>외부 서버, 클라우드 또는 제3자에게 데이터가 전송되지 않습니다.</li>
+        <li>로그인한 경우, 라운드 기록은 클라우드 동기화를 위해 앱 서버에도 저장됩니다. 건강 데이터(심박수, 걸음수)는 서버에 전송되지 않습니다.</li>
+        <li>계정 정보(이메일, 표시 이름)는 인증 토큰과 함께 기기의 키체인(Keychain)에 안전하게 저장됩니다.</li>
     </ul>
 
     <h2>4. 제3자 제공</h2>
-    <p>그린로그는 사용자의 골프 스코어, 라운드, 건강 데이터를 제3자에게 제공, 공유 또는 판매하지 않습니다.</p>
-    <p>단, 1번 항목에 명시된 광고 관련 정보는 광고 게재 및 효과 측정 목적으로 Google AdMob(Google LLC) 및 Apple SKAdNetwork에 전달될 수 있으며, 각 사의 개인정보 처리방침을 따릅니다.</p>
+    <p>그린로그는 사용자의 건강 데이터를 제3자에게 제공, 공유 또는 판매하지 않습니다.</p>
+    <p>다음의 경우에 한해 제3자에게 정보가 전달됩니다:</p>
     <ul>
-        <li>Google AdMob: <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">https://policies.google.com/privacy</a></li>
-        <li>Apple SKAdNetwork: <a href="https://www.apple.com/legal/privacy/" target="_blank" rel="noopener">https://www.apple.com/legal/privacy/</a></li>
+        <li><strong>Google 로그인(Google Identity Services)</strong>: 인증 목적으로 Google에 로그인 정보가 전달됩니다. (<a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google 개인정보처리방침</a>)</li>
+        <li><strong>Google AdMob</strong>: 광고 게재 및 효과 측정 목적 (<a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google 개인정보처리방침</a>)</li>
+        <li><strong>Apple SKAdNetwork</strong>: 광고 효과 측정 목적 (<a href="https://www.apple.com/legal/privacy/" target="_blank" rel="noopener">Apple 개인정보처리방침</a>)</li>
+        <li><strong>팀 라운딩 참가자</strong>: 같은 팀 라운딩 방에 참여한 사용자 간 표시 이름 및 스코어가 공유됩니다.</li>
     </ul>
 
     <h2>5. 분석 및 광고</h2>
@@ -106,7 +123,8 @@
     <p>광고 제거(인앱 구매)를 구매하신 경우 앱 내 광고가 표시되지 않습니다.</p>
 
     <h2>6. 데이터 삭제</h2>
-    <p>앱 내에서 개별 라운드 기록을 삭제하거나, 앱을 삭제하면 모든 데이터가 완전히 제거됩니다. HealthKit에 저장된 워크아웃 데이터는 iPhone 건강 앱에서 별도로 삭제할 수 있습니다.</p>
+    <p>앱 내에서 개별 라운드 기록을 삭제하거나, 앱을 삭제하면 기기의 모든 데이터가 완전히 제거됩니다. HealthKit에 저장된 워크아웃 데이터는 iPhone 건강 앱에서 별도로 삭제할 수 있습니다.</p>
+    <p>서버에 동기화된 데이터의 삭제를 원하시면 앱 내 설정에서 로그아웃하거나, 아래 문의처로 연락해 주시면 서버 데이터를 삭제해 드립니다.</p>
 
     <h2>7. 아동 개인정보</h2>
     <p>그린로그는 아동의 개인정보를 수집하지 않으며, 모든 연령대가 안전하게 사용할 수 있습니다.</p>
